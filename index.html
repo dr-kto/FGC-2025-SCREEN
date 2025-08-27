@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLL SCREEN</title>
+    <link rel="stylesheet" href="./style/video.css">
+    <link rel="stylesheet" href="./style/animations.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- <img id="gum-local" class="backpic" src="./media/maxresdefault.jpg" alt=""> -->
+    <video id="gum-local" class="backpic camera" autoplay="" playsinline="" muted=""></video>
+
+    <video src="./media/geneva.mp4" class="gen dNone" id="gum-local"  playsinline=""></video>
+    <video src="./media/kazakhstan.mp4" id="gum-local" class="kaz dNone" autoplay="" playsinline="" muted=""></video>
+    <video src="./media/uzbekistan.mp4" id="gum-local" class="uzb dNone" autoplay="" playsinline="" muted=""></video>
+        <div class=""></div>
+        <div class="container ">
+            <div class="main">
+                <div class="tred">
+                    <div class="teams">
+                        <div class="srTeam1"></div>
+                        <div class="srTeam2"></div>
+                        <div class="srTeam3"></div>
+                        <div class="srTeam4"></div>
+                    </div>
+                    <div class="info1">Match  </div>
+                    
+                    </div>
+                <div class="empty">
+                    <div class="teams"></div>
+                    <div class="info"> </div>
+                </div>
+                <div class="tblue">
+                    <div class="teams">
+                        <div class="sbTeam1"></div>
+                        <div class="sbTeam2"></div>
+                        <div class="sbTeam3"></div>
+                        <div class="sbTeam4"></div>
+                    </div>
+                    <div class="info2">
+                        <span style="font-style:italic;">First </span> Global Challenge
+                    </div>
+                </div>
+                
+                <div class="mid">
+                    
+
+                    <div class="logo">
+                        <img src="./media/logo.png" alt="">
+                    </div>
+                    <div class="timer">
+                        <!-- <img style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);width: 100%;" src="https://cdnl.iconscout.com/lottie/premium/thumb/air-horn-7928877-6275009.mp4?f=webp"> -->
+                    </div>
+                    <div class="score ">
+                        <div class="sleft"></div>
+                        <div class="sright"></div>
+                    </div>
+                </div>
+            </div>
+            
+           
+        </div>
+        <div class="popup invisible">
+            <div class="resultInfo">Results   <span>MATCH: 1</span></div>
+            <div class="resultRed" >
+                <div class="red win invisible">
+                    <img src="./media/globe.png" alt="">
+                    <span>WIN</span>
+                </div>
+                <img src="./media/RED_figure.png" alt="" >
+                <div class="teamNames">
+                    <div class="rTeam1"></div>
+                    <div class="rTeam2"></div>
+                    <div class="rTeam3"></div>
+                    <!-- <div class="rTeam4"></div> -->
+                </div>
+                <div class="scoreTable">
+                    <div class="red aPoints">WATER CONSERVED <span>18</span></div>
+                    <div class="red bPoints">ENERGY CONSERVED <span>18</span></div>
+                    <div class="red cPoints">FOOD PRODUCED <span>18</span></div>
+                    <div class="red dPoints">FOOD SECURED <span>18</span></div>
+                    <div class="red ePoints">BALANCE MULTIPLIER <span>18</span></div>
+                    <div class="red fPoints">COOPERTITION BONUS <span>0</span></div>
+                    <div class="red gPoints">FOUL GAME<span>0</span></div>
+                    <!-- <div class="red gPoints" style="color: #fcef39;">YELLOW CARD <span>0</span></div>
+                    <div class="red iPoints" style="color: #fcbb39;">FOUL GAME <span>0</span></div>
+                    <div class="red jPoints" style="color: #fc3939;">RED CARD <span>0</span></div> -->
+                </div>
+                <div class="rTeamScore">TOTAL: <span></span></div>
+
+                
+            </div>
+            
+            <div class="resultBlue">
+                <div class="blue win invisible">
+                    <img src="./media/globe.png"  alt="">
+                    <span>WIN</span>
+                </div>
+                <img src="./media/BLUE_figure.png" alt="" >
+                <div class="teamNames">
+                    <div class="bTeam1"></div>
+                    <div class="bTeam2"></div>
+                    <div class="bTeam3"></div>
+                    <!-- <div class="bTeam4"></div> -->
+                </div>
+                <div class="scoreTable bTable">
+                    <div class="blue aPoints">WATER CONSERVED <span>18</span></div>
+                    <div class="blue bPoints">ENERGY CONSERVED <span>18</span></div>
+                    <div class="blue cPoints">FOOD PRODUCED <span>18</span></div>
+                    <div class="blue dPoints">FOOD SECURED <span>18</span></div>
+                    <div class="blue ePoints">BALANCE MULTIPLIER <span>18</span></div>
+                    <div class="blue fPoints">COOPERTITION BONUS <span>0</span></div>
+                    <div class="blue gPoints">FOUL GAME<span>0</span></div>
+                    <!-- <div class="blue gPoints" style="color: #fcef39;">YELLOW CARD <span>0</span></div>
+                    <div class="blue iPoints" style="color: #fcbb39;">FOUL GAME <span>0</span></div>
+                    <div class="blue jPoints" style="color: #fc3939;">RED CARD <span>0</span></div> -->
+                </div>
+                <div class="bTeamScore">TOTAL: <span></span></div>
+                
+            </div>
+            
+        </div>
+
+        <div class="qr dNone">
+            <a href="https://dr-kto.github.io/FLL-SDU-RANKING-2023/" target="_blank"><img src="./media/qr.png" width="164" height="164" border="0" title="QR код"></a>
+        </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="./js/video.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-player/2.0.2/lottie-player.js" integrity="sha512-NcJNVDzfhHalE0Dj3s8ub4hW0QYw1hfk05I53N3MTXOYDDGt0wpXmAPve+GhmmdDxik8pTUONQjeNKDO/p7rhQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- <script src="./js/script.js"></script> -->
+        
+</body>
+</html>
