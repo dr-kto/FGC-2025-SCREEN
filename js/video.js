@@ -393,7 +393,7 @@ function initAnimation()
 }
 const yourFunction = async () => {
     await delay(2500)
-    let rate = 0.01;
+    let rate = 0.02;
     for (let index = 1; index < 10; index++) {
         await delay(index * 1);
         if(scoreRed > scoreBlue)

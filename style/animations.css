@@ -80,7 +80,7 @@
 }
 .resultRed
 {
-    width: calc(var(--scale) * var(--red) * 35%);
+    width: calc(var(--scale) * var(--red) * 40%);
     padding-bottom: calc(var(--scale) * var(--red) * 1vw);
 } 
 .red .win img 
@@ -112,7 +112,7 @@
 .resultBlue .scoreTable div span
 {
     min-width: calc(var(--scale) * var(--blue) * 4vw);
-    border-left: #797979 solid calc(var(--scale) * var(--blue) * 2px);
+    border-left: #000000 solid calc(var(--scale) * var(--blue) * 2px);
 }
 .resultBlue .scoreTable div:before
 {
@@ -127,7 +127,7 @@
 }
 .resultBlue .teamNames div
 {
-    border-bottom:#00000075 solid calc(var(--scale) * var(--blue) * 1px);
+    border-bottom:#8d8d8d62 solid calc(var(--scale) * var(--blue) * 1px);
     margin: calc(var(--scale) * var(--blue) * 1vw);
     font-size: calc(var(--scale) * var(--blue) * 2vw);
     letter-spacing: calc(var(--scale) * var(--blue) * 1px);
@@ -144,7 +144,7 @@
 }
 .resultBlue
 {
-    width: calc(var(--scale) * var(--blue) * 35%);
+    width: calc(var(--scale) * var(--blue) * 40%);
     padding-bottom: calc(var(--scale) * var(--blue) * 1vw);
 } 
 .blue .win img 

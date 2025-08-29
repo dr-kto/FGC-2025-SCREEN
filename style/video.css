@@ -3,7 +3,7 @@
 --rred :#fc3939;
 --yellow: rgb(246, 246, 137);
 --oorange: rgb(250, 194, 88);
---scale: 0.6;
+--scale: 0.55;
 --red: 1;
 --blue: 1;
 }
@@ -38,6 +38,7 @@
         height: 100%;
         width: 100%;
         position: absolute;
+        z-index: 22;
         display: flex;
         justify-content: center;
         color: #fff;
