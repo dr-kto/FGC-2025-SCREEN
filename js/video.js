@@ -79,8 +79,8 @@ async function getData() {
         
         
         
-        document.querySelector('.resultInfo').innerHTML = "RESULTS   <span>" + getRow(data,17,6) + "</span>";
-        document.querySelector('.info1').innerHTML = getRow(data,17 ,6)
+        document.querySelector('.resultInfo').innerHTML = "RESULTS   <span>" + getRow(data,18,6) + "</span>";
+        document.querySelector('.info1').innerHTML = getRow(data,18 ,6)
 
 
 
@@ -112,10 +112,11 @@ async function getData() {
         document.querySelector('.red.pointRow8').innerHTML =  getRow(data,13,1)+"<span>"+getRow(data,13,3)+"</span>"
         document.querySelector('.red.pointRow9').innerHTML =  getRow(data,14,1)+"<span>"+getRow(data,14,3)+"</span>"
         document.querySelector('.red.pointRow10').innerHTML =  getRow(data,15,1)+"<span>"+getRow(data,15,3)+"</span>"
+        document.querySelector('.red.pointRow11').innerHTML =  getRow(data,16,1)+"<span>"+getRow(data,16,3)+"</span>"
         
-        document.querySelector('.rTeamScore').innerHTML =  getRow(data,16,1)+"<span>"+getRow(data,16,2)+"</span>"
-        document.querySelector('.sleft').innerHTML =  getRow(data,16,2)
-        scoreRed = getRow(data,16,2)
+        document.querySelector('.rTeamScore').innerHTML =  getRow(data,17,1)+"<span>"+getRow(data,17,2)+"</span>"
+        document.querySelector('.sleft').innerHTML =  getRow(data,17,2)
+        scoreRed = getRow(data,17,2)
         
         
         document.querySelector('.blue.pointRow1').innerHTML =  getRow(data,6,8)+"<span>"+getRow(data,6,10)+"</span>"
@@ -128,9 +129,10 @@ async function getData() {
         document.querySelector('.blue.pointRow8').innerHTML =  getRow(data,13,8)+"<span>"+getRow(data,13,10)+"</span>"
         document.querySelector('.blue.pointRow9').innerHTML =  getRow(data,14,8)+"<span>"+getRow(data,14,10)+"</span>"
         document.querySelector('.blue.pointRow10').innerHTML =  getRow(data,15,8)+"<span>"+getRow(data,15,10)+"</span>"
-        document.querySelector('.bTeamScore').innerHTML =  getRow(data,16,8)+"<span>"+getRow(data,16,9)+"</span>"
-        document.querySelector('.sright').innerHTML = getRow(data,16,9)
-        scoreBlue = getRow(data,16,9)
+        document.querySelector('.blue.pointRow11').innerHTML =  getRow(data,16,8)+"<span>"+getRow(data,16,10)+"</span>"
+        document.querySelector('.bTeamScore').innerHTML =  getRow(data,17,8)+"<span>"+getRow(data,17,9)+"</span>"
+        document.querySelector('.sright').innerHTML = getRow(data,17,9)
+        scoreBlue = getRow(data,17,9)
         
         // let redWins = 
         if(scoreRed > scoreBlue)

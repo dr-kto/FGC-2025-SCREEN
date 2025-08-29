@@ -42,7 +42,7 @@
         justify-content: center;
         color: #fff;
         align-items: center;
-        padding-top: 1%;
+        padding-top: 3%;
     }
 
     .scoreTable
@@ -170,7 +170,7 @@
     .teamNames div
     {
         text-align: center;
-        border-bottom:#00000075 solid calc(var(--scale) * 1px);
+        border-bottom:#797979 solid calc(var(--scale) * 1px);
         margin: calc(var(--scale) * 0.7vw);
         font-size: calc(var(--scale) * 2vw);
         font-weight: bold;
@@ -209,7 +209,7 @@
         align-items: center;
         position: fixed;
         z-index: 0;
-        height: 20%;
+        height: 18%;
         width: 62%;
         top:0;
         font-size: calc(var(--scale) * 5vw);
