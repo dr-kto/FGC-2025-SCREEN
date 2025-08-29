@@ -80,7 +80,7 @@ async function getData() {
         
         
         document.querySelector('.resultInfo').innerHTML = "RESULTS   <span>" + getRow(data,17,6) + "</span>";
-        document.querySelector('.info1').innerHTML = getRow(data,15 ,6)
+        document.querySelector('.info1').innerHTML = getRow(data,17 ,6)
 
 
 
