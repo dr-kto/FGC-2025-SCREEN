@@ -3,7 +3,7 @@
 --rred :#fc3939;
 --yellow: rgb(246, 246, 137);
 --oorange: rgb(250, 194, 88);
---scale: 0.65;
+--scale: 0.6;
 --red: 1;
 --blue: 1;
 }
@@ -36,7 +36,7 @@
     {
         background-color: #00000041;
         height: 100%;
-        width: 70%;
+        width: 100%;
         position: absolute;
         display: flex;
         justify-content: center;
@@ -95,54 +95,46 @@
         z-index: 3;
     }
 
-    .aPoints:before
+    .pointRow1:before
     {
         background-image: url(/media/water.png);
     }
-    .bPoints:before
+    .pointRow2:before
     {
         background-image: url(/media/energy.png);
     }
-    .cPoints:before
+    .pointRow3:before
     {
         background-image: url(/media/foodProduced.png);
     }
-    .dPoints:before
+    .pointRow4:before
     {
         background-image: url(/media/foodSecured.png);
     }
-    .ePoints:before
+    .pointRow5:before
     {
         background-image: url(/media/multiplier.png);
     }
-    .fPoints:before
+    .pointRow6:before
     {
         background-image: url(/media/support.png);
     }
-    /* .hPoints:before
+    .pointRow7:before
     {
-        background-image: url(/media/hydrogen.png);
+        background-image: url(/media/foodProduced.png);
     }
-    .oPoints:before
+    .pointRow8:before
     {
-        background-image: url(/media/oxygen.png);
+        background-image: url(/media/foodSecured.png);
     }
-    .cmPoints:before
+    .pointRow9:before
     {
-        background-image: url(/media/red-cross.png);
+        background-image: url(/media/multiplier.png);
     }
-    .rPoints:before
+    .pointRow10:before
     {
-        background-image: url(/media/robot.png);
+        background-image: url(/media/support.png);
     }
-    .cbPoints:before
-    {
-        background-image: url(/media/handshake.png);
-    }
-    .pPoints:before
-    {
-        background-image: url(/media/forbidden.png);
-    } */
 
     .rTeamScore,
     .bTeamScore
@@ -151,15 +143,15 @@
         letter-spacing: calc(var(--scale) * 1px);
         position: absolute;
         z-index: -1;
-        bottom: -13%;
+        bottom: -10%;
         right: 0%;
         width: 50%;
         padding:  calc(var(--scale) * 2vw) calc(var(--scale) * 2vw) calc(var(--scale) * 2vw) calc(var(--scale) * 1vw);
         display: flex;
         justify-content: space-between;
         font-size: calc(var(--scale) * 1.3vw);
-        border-bottom-left-radius: 3px;
-        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
     .rTeamScore
     {
@@ -250,11 +242,11 @@
         padding-bottom: calc(var(--scale) * 1vw);
     } 
     .resultBlue {
-        margin-left: 2%;
+        margin-left: 3%;
         border-bottom-left-radius: 3px;
     }
     .resultRed {
-        margin-right: 2%;
+        margin-right: 3%;
         border-bottom-left-radius: 3px;
     }
     .resultInfo {

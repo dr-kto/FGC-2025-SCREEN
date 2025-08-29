@@ -63,8 +63,8 @@
 }
 .resultRed .teamNames div
 {
-    border-bottom:#00000075 solid calc(var(--scale) * var(--red) * 1px);
-    margin: calc(var(--scale) * var(--red) * 2vw);
+    border-bottom:#d9545475 solid calc(var(--scale) * var(--red) * 1px);
+    margin: calc(var(--scale) * var(--red) * 1vw);
     font-size: calc(var(--scale) * var(--red) * 2vw);
     letter-spacing: calc(var(--scale) * var(--red) * 1px);
 }
@@ -80,7 +80,7 @@
 }
 .resultRed
 {
-    width: calc(var(--scale) * var(--red) * 40%);
+    width: calc(var(--scale) * var(--red) * 35%);
     padding-bottom: calc(var(--scale) * var(--red) * 1vw);
 } 
 .red .win img 
@@ -128,7 +128,7 @@
 .resultBlue .teamNames div
 {
     border-bottom:#00000075 solid calc(var(--scale) * var(--blue) * 1px);
-    margin: calc(var(--scale) * var(--blue) * 2vw);
+    margin: calc(var(--scale) * var(--blue) * 1vw);
     font-size: calc(var(--scale) * var(--blue) * 2vw);
     letter-spacing: calc(var(--scale) * var(--blue) * 1px);
 }
@@ -144,7 +144,7 @@
 }
 .resultBlue
 {
-    width: calc(var(--scale) * var(--blue) * 40%);
+    width: calc(var(--scale) * var(--blue) * 35%);
     padding-bottom: calc(var(--scale) * var(--blue) * 1vw);
 } 
 .blue .win img 

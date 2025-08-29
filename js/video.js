@@ -1,5 +1,5 @@
-const sheetsURL = 'https://docs.google.com/spreadsheets/d/1nlZug92ipYAeZMa-BLZAMMJWIT8-Q6FBq8D-wP17Cy0'
-let sheetsName = 'SCORING'
+const sheetsURL = 'https://docs.google.com/spreadsheets/d/1q9YZIl1YUqhMrcwPzgeVKkoVWZKz1odplr54rP2TUVE'
+let sheetsName = 'CALC'
 const query = encodeURIComponent('Select *  ')
 const url = sheetsURL + '/gviz/tq?'+'tqx=out:txt&sheet=' + sheetsName + '&tq=' + query;
 let coundownSeconds = 150
@@ -79,7 +79,7 @@ async function getData() {
         
         
         
-        document.querySelector('.resultInfo').innerHTML = "RESULTS   <span>" + getRow(data,15,6) + "</span>";
+        document.querySelector('.resultInfo').innerHTML = "RESULTS   <span>" + getRow(data,17,6) + "</span>";
         document.querySelector('.info1').innerHTML = getRow(data,15 ,6)
 
 
@@ -87,7 +87,7 @@ async function getData() {
         document.querySelector('.srTeam1').innerText = getRow(data,2,1)
         document.querySelector('.srTeam2').innerHTML = getRow(data,3,1)
         document.querySelector('.srTeam3').innerHTML = getRow(data,4,1)
-        document.querySelector('.srTeam4').innerText = getRow(data,5,1)
+        // document.querySelector('.srTeam4').innerText = getRow(data,5,1)
         document.querySelector('.rTeam1').innerText = getRow(data,2,1)
         document.querySelector('.rTeam2').innerHTML = getRow(data,3,1)
         document.querySelector('.rTeam3').innerHTML = getRow(data,4,1)
@@ -96,40 +96,41 @@ async function getData() {
         document.querySelector('.sbTeam1').innerHTML = getRow(data,2,8)
         document.querySelector('.sbTeam2').innerHTML = getRow(data,3,8)
         document.querySelector('.sbTeam3').innerHTML = getRow(data,4,8)
-        document.querySelector('.sbTeam4').innerHTML = getRow(data,5,8)
+        // document.querySelector('.sbTeam4').innerHTML = getRow(data,5,8)
         document.querySelector('.bTeam1').innerHTML = getRow(data,2,8)
         document.querySelector('.bTeam2').innerHTML = getRow(data,3,8)
         document.querySelector('.bTeam3').innerHTML = getRow(data,4,8)
         // document.querySelector('.bTeam4').innerHTML = getRow(data,5,8)
 
-        document.querySelector('.red.aPoints').innerHTML =  getRow(data,7,1)+"<span>"+getRow(data,7,3)+"</span>"
-        document.querySelector('.red.bPoints').innerHTML =  getRow(data,8,1)+"<span>"+getRow(data,8,3)+"</span>"
-        document.querySelector('.red.cPoints').innerHTML =  getRow(data,9,1)+"<span>"+getRow(data,9,3)+"</span>"
-        document.querySelector('.red.dPoints').innerHTML =  getRow(data,10,1)+"<span>"+getRow(data,10,3)+"</span>"
-        document.querySelector('.red.ePoints').innerHTML =  getRow(data,11,1)+"<span>"+getRow(data,11,3)+"</span>"
-        document.querySelector('.red.fPoints').innerHTML =  getRow(data,12,1)+"<span>"+getRow(data,12,3)+"</span>"
-        document.querySelector('.red.gPoints').innerHTML =  getRow(data,13,1)+"<span>"+Math.round(Number(getRow(data,13,3))*100)/100+"</span>"
-        // document.querySelector('.red.gPoints').innerHTML =  getRow(data,13,1)+"<span>"+getRow(data,13,3)+"</span>"
-        // document.querySelector('.red.iPoints').innerHTML =  getRow(data,14,1)+"<span>"+Math.round(getRow(data,14,3)*10)/10+"</span>"
-        // document.querySelector('.red.jPoints').innerHTML =  getRow(data,15,1)+"<span>"+getRow(data,15,3)+"</span>"
-        document.querySelector('.rTeamScore').innerHTML =  getRow(data,14,1)+"<span>"+getRow(data,14,2)+"</span>"
-        document.querySelector('.sleft').innerHTML =  getRow(data,14,2)
-        scoreRed = getRow(data,14,2)
+        document.querySelector('.red.pointRow1').innerHTML =  getRow(data,6,1)+"<span>"+getRow(data,6,3)+"</span>"
+        document.querySelector('.red.pointRow2').innerHTML =  getRow(data,7,1)+"<span>"+getRow(data,7,3)+"</span>"
+        document.querySelector('.red.pointRow3').innerHTML =  getRow(data,8,1)+"<span>"+getRow(data,8,3)+"</span>"
+        document.querySelector('.red.pointRow4').innerHTML =  getRow(data,9,1)+"<span>"+getRow(data,9,3)+"</span>"
+        document.querySelector('.red.pointRow5').innerHTML =  getRow(data,10,1)+"<span>"+getRow(data,10,3)+"</span>"
+        document.querySelector('.red.pointRow6').innerHTML =  getRow(data,11,1)+"<span>"+getRow(data,11,3)+"</span>"
+        document.querySelector('.red.pointRow7').innerHTML =  getRow(data,12,1)+"<span>"+getRow(data,12,3)+"</span>"
+        document.querySelector('.red.pointRow8').innerHTML =  getRow(data,13,1)+"<span>"+getRow(data,13,3)+"</span>"
+        document.querySelector('.red.pointRow9').innerHTML =  getRow(data,14,1)+"<span>"+getRow(data,14,3)+"</span>"
+        document.querySelector('.red.pointRow10').innerHTML =  getRow(data,15,1)+"<span>"+getRow(data,15,3)+"</span>"
+        
+        document.querySelector('.rTeamScore').innerHTML =  getRow(data,16,1)+"<span>"+getRow(data,16,2)+"</span>"
+        document.querySelector('.sleft').innerHTML =  getRow(data,16,2)
+        scoreRed = getRow(data,16,2)
         
         
-        document.querySelector('.blue.aPoints').innerHTML =  getRow(data,7,8)+"<span>"+getRow(data,7,10)+"</span>"
-        document.querySelector('.blue.bPoints').innerHTML =  getRow(data,8,8)+"<span>"+getRow(data,8,10)+"</span>"
-        document.querySelector('.blue.cPoints').innerHTML =  getRow(data,9,8)+"<span>"+getRow(data,9,10)+"</span>"
-        document.querySelector('.blue.dPoints').innerHTML =  getRow(data,10,8)+"<span>"+getRow(data,10,10)+"</span>"
-        document.querySelector('.blue.ePoints').innerHTML =  getRow(data,11,8)+"<span>"+getRow(data,11,10)+"</span>"
-        document.querySelector('.blue.fPoints').innerHTML =  getRow(data,12,8)+"<span>"+getRow(data,12,10)+"</span>"
-        document.querySelector('.blue.gPoints').innerHTML =  getRow(data,13,8)+"<span>"+Math.round(Number(getRow(data,13,10))*100)/100+"</span>"
-        // document.querySelector('.blue.gPoints').innerHTML =  getRow(data,13,8)+"<span>"+getRow(data,13,10)+"</span>"
-        // document.querySelector('.blue.iPoints').innerHTML =  getRow(data,14,8)+"<span>"+Math.round(getRow(data,14,10)*10)/10+"</span>"
-        // document.querySelector('.blue.jPoints').innerHTML =  getRow(data,15,8)+"<span>"+getRow(data,15,10)+"</span>"
-        document.querySelector('.bTeamScore').innerHTML =  getRow(data,14,8)+"<span>"+getRow(data,14,9)+"</span>"
-        document.querySelector('.sright').innerHTML = getRow(data,14,9)
-        scoreBlue = getRow(data,14,9)
+        document.querySelector('.blue.pointRow1').innerHTML =  getRow(data,6,8)+"<span>"+getRow(data,6,10)+"</span>"
+        document.querySelector('.blue.pointRow2').innerHTML =  getRow(data,7,8)+"<span>"+getRow(data,7,10)+"</span>"
+        document.querySelector('.blue.pointRow3').innerHTML =  getRow(data,8,8)+"<span>"+getRow(data,8,10)+"</span>"
+        document.querySelector('.blue.pointRow4').innerHTML =  getRow(data,9,8)+"<span>"+getRow(data,9,10)+"</span>"
+        document.querySelector('.blue.pointRow5').innerHTML =  getRow(data,10,8)+"<span>"+getRow(data,10,10)+"</span>"
+        document.querySelector('.blue.pointRow6').innerHTML =  getRow(data,11,8)+"<span>"+getRow(data,11,10)+"</span>"
+        document.querySelector('.blue.pointRow7').innerHTML =  getRow(data,12,8)+"<span>"+getRow(data,12,10)+"</span>"
+        document.querySelector('.blue.pointRow8').innerHTML =  getRow(data,13,8)+"<span>"+getRow(data,13,10)+"</span>"
+        document.querySelector('.blue.pointRow9').innerHTML =  getRow(data,14,8)+"<span>"+getRow(data,14,10)+"</span>"
+        document.querySelector('.blue.pointRow10').innerHTML =  getRow(data,15,8)+"<span>"+getRow(data,15,10)+"</span>"
+        document.querySelector('.bTeamScore').innerHTML =  getRow(data,16,8)+"<span>"+getRow(data,16,9)+"</span>"
+        document.querySelector('.sright').innerHTML = getRow(data,16,9)
+        scoreBlue = getRow(data,16,9)
         
         // let redWins = 
         if(scoreRed > scoreBlue)
@@ -390,7 +391,7 @@ function initAnimation()
 }
 const yourFunction = async () => {
     await delay(2500)
-    let rate = 0.03;
+    let rate = 0.01;
     for (let index = 1; index < 10; index++) {
         await delay(index * 1);
         if(scoreRed > scoreBlue)
