@@ -240,7 +240,7 @@ window.addEventListener('keypress', function (e) {
 
     if (e.code === 'KeyR') 
     {
-        toggleClass('.camera', 'invisible')
+        //toggleClass('.camera', 'invisible')
         // Shows/Removes RESULTS
         div(':root').style.setProperty('--blue',1)
         div(':root').style.setProperty('--red',1)
