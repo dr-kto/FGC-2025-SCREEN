@@ -59,7 +59,7 @@
 {
     letter-spacing: calc(var(--scale) * var(--red) * 1px);
     padding:  calc(var(--scale) * var(--red) * 2vw) calc(var(--scale) * var(--red) * 2vw) calc(var(--scale) * var(--red) * 2vw) calc(var(--scale) * var(--red) * 1vw);
-    font-size: calc(var(--scale) * var(--red) * 1.3vw);
+    font-size: calc(var(--scale) * var(--red) * 3vw);
 }
 .resultRed .teamNames div
 {
@@ -123,7 +123,7 @@
 {
     letter-spacing: calc(var(--scale) * var(--blue) * 1px);
     padding:  calc(var(--scale) * var(--blue) * 2vw) calc(var(--scale) * var(--blue) * 2vw) calc(var(--scale) * var(--blue) * 2vw) calc(var(--scale) * var(--blue) * 1vw);
-    font-size: calc(var(--scale) * var(--blue) * 1.3vw);
+    font-size: calc(var(--scale) * var(--blue) * 3vw);
 }
 .resultBlue .teamNames div
 {

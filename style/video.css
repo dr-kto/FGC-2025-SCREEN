@@ -144,7 +144,7 @@
         letter-spacing: calc(var(--scale) * 1px);
         position: absolute;
         z-index: -1;
-        bottom: -10%;
+        bottom: -13%;
         right: 0%;
         width: 50%;
         padding:  calc(var(--scale) * 2vw) calc(var(--scale) * 2vw) calc(var(--scale) * 2vw) calc(var(--scale) * 1vw);
